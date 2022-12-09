@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa calculo del promedio de Imc</h1>
+    <script>
+
+        function saltarLinea() {
+            
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarLinea();
+
+        }
+
+        function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2) {
+
+            imc1 = peso1 / (altura1 * altura1);
+            imc2 = peso2 / (altura2 * altura2);
+
+            imprimir("El promedio del imc calculado de " + nombre1 + " y " + nombre2 + " es: " + (imc1+imc2)/2);
+        }
+
+        calcularImc(71,1.70,"Memo", 71,1.72, "Christian");
+        
+    </script>
+</body>
+</html>
